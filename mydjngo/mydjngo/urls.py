@@ -20,4 +20,5 @@ urlpatterns = [
     path('admin/', admin.site.urls),
 path('', views.index),
 path('hello/', views.hello),
+path('search/', views.searchmongo),
 ]
