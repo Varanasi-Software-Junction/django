@@ -3,6 +3,7 @@ from django.shortcuts import render
 import json
 import urllib.parse
 import pymongo
+
 #from rest_framework import viewsets
 def searchmongo(request):
     client = pymongo.MongoClient("mongodb://localhost:27017/vsj")
@@ -20,3 +21,9 @@ def hello(request):
     return render(request, "hello.html", {'data':data})
 def index(request):
     return HttpResponse("Welcome")
+def dataintables(request):
+    data={1:"One",2:"Two",3:"Three"}
+    return render(request, "table.html", {'data': data})
+def multipletables(request):
+    data={1:[1,2,3],2:[4,5,6],3:[7,8,9]}
+    return render(request, "multipletable.html", {'data': data})

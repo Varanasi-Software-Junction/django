@@ -21,4 +21,6 @@ urlpatterns = [
 path('', views.index),
 path('hello/', views.hello),
 path('search/', views.searchmongo),
+path('dataintables/', views.dataintables),
+path('multipletable/', views.multipletables),
 ]
