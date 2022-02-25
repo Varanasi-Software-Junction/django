@@ -23,4 +23,5 @@ path('hello/', views.hello),
 path('search/', views.searchmongo),
 path('dataintables/', views.dataintables),
 path('multipletable/', views.multipletables),
+path('sqltable/', views.datafrommysql),
 ]
