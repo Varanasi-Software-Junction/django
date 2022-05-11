@@ -24,4 +24,7 @@ path('search/', views.searchmongo),
 path('dataintables/', views.dataintables),
 path('multipletable/', views.multipletables),
 path('sqltable/', views.datafrommysql),
+path('add/<int:a>/<int:b>', views.add),
+path('add/<int:a>/', views.add),
+path('add/', views.add),
 ]

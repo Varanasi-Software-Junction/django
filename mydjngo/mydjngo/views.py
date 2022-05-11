@@ -24,6 +24,11 @@ def hello(request):
     data = {}
     return render(request, "hello.html", {'data': data})
 
+def add(request,a=0,b=0):
+    return HttpResponse("Add " + str(a+b))
+def many(request,d):
+    print(d)
+    return HttpResponse("Add " + str(a+b))
 
 def index(request):
     return HttpResponse("Welcome")
